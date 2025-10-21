@@ -5,40 +5,22 @@ public class Cadastro {
     private String senha;
     private String cpf;
 
-    public Cadastro() {
-    }
-
     public Cadastro(String nome, String senha, String cpf) {
         this.nome = nome;
         this.senha = senha;
         this.cpf = cpf;
     }
 
-    // Getter e Setter para nome
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    // Getter e Setter para senha
     public String getSenha() {
         return senha;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    // Getter e Setter para CPF
     public String getCpf() {
         return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public String validarNome(String nome){
@@ -48,7 +30,6 @@ public class Cadastro {
         return "Nome Inválido.";
         
     }
-
 
     public String validarSenha(String email){
         if(email.length() >= 8 && email.matches("^[a-zA-Z0-9]+$")){
